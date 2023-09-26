@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* -- Header --*/
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-bottom: 5em;
+    margin-top: 2em;
+}
+
+.navHeaderLeft {
+    width: 70%;
+    display: flex;
+}
+
+.navHeaderRight {
+    width: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imgLogo {
+    width: 8%;
+    max-height: 4em;
+    overflow: hidden;
+    margin-left: 5em;
+}
+
+.navHeaderLeftLink,
+.navHeaderRight a,
+.title {
+    display: inline-block;
+    width: 15%;
+    color: rgb(50, 50, 50);
+    font-size: 1.2em;
+    text-align: center;
+    transition: ease-in-out 200ms;
+    font-weight: 300;
+}
+
+.navHeaderLeftLink {
+    padding-top: 1em;
+}
+
+.title {
+    width: 40%;
+}
+
+.title a {
+    text-decoration: none;
+    font-family: "monotype corsiva";
+    font-size: 3em;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(50, 50, 50);
+}
+
+.title a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.title a:hover span {
+    color: rgb(50, 50, 50);
+}
+
+.navHeaderRight a {
+    width: 20%;
+}
+
+.navHeaderRight a:first-child {
+    font-size: xx-large;
+    line-height: normal;
+}
+
+.imgLogo a:hover img {
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+.cartIcon {
+    text-decoration: none;
+}
+
+.navHeaderLeftLink:hover,
+.navHeaderRight a:hover {
+    color: crimson;
+    font-weight: 900;
+    transform: scale(1.1);
+}
+
+/* -- intro container --*/
+.introContainer {
+    position: relative;
+
+}
+
+.introImg {
+    width: 70%;
+    margin: 2em auto;
+}
+
+.introMsg {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 0%;
+    bottom: 60%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.introMsg p:first-child {
+    color: aliceblue;
+    font-size: 3em;
+    margin-top: -0.01em;
+}
+
+.introMsg p:nth-child(2) {
+    color: lightgray;
+    margin-top: -2em;
+    font-weight: 600;
+}
+
+.eLetter {
+    color: crimson;
+}
+
+/* --- subtitle --- */
+.subtitle {
+    margin: 10% 0% 2% 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subtitle p:first-child {
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.subtitle p:nth-child(2) {
+    margin-top: -1.5em;
+}
+
+/* --- Illustration container --- */
+.illustrationContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    width: 22%;
+    overflow: hidden;
+    position: relative;
+    margin: 2% 1%;
+    transform: scale(1.01);
+    transition: ease-in-out 200ms;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+}
+
+.card:hover .iconCardContent p:first-child {
+    color: crimson;
+}
+
+.iconCardContent {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+}
+
+.iconCardContent p:first-child {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.iconCardContent p:nth-child(2) {
+    font-size: 0.9em;
+    margin-top: -1.5em;
+    color: rgb(50, 50, 50);
+}
+
+/* --- Blog container --- */
+.blogContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blogCard,
+.blogCardContent {
+    position: static;
+}
+
+.blogimgContainer {
+    height: 40%;
+}
+.blogCard a{
+    text-decoration: none;
+}
+.blogimgContainer img {
+    padding: 20px;
+}
+
+.blogCardContent {
+    padding: 2em;
+}
+
+.blogCardContent p:first-child {
+    font-size: 1.1em;
+    color: rgb(50, 50, 50);
+}
+
+.blogCardContent p:nth-child(2) {
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 1em;
+}
+/* -- FOOTER --*/
+.footer{
+    background-color: rgb(50, 50, 50);
+    color: azure;
+    padding: 2em 3em;
+}
+.footer p{
+    text-align: center;
+}
+/* -- NAV BAR MEDIUM SCREEN --*/
+.nav_menu_top {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.nav_top_menuIcon {
+    color: rgb(250, 250, 250);
+    padding: 0.5em 1em;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+}
